@@ -23,6 +23,18 @@ wsl --export Ubuntu d:\wsl\Ubuntu-20.04
 --unregister <Distro>
         Unregisters the distribution and deletes the root filesystem.
 
+D:\wsl>wsl -l -v
+  NAME            STATE           VERSION
+* Ubuntu          Stopped         2
+  kali-linux      Stopped         2
+  Ubuntu-18.04    Stopped         2
+D:\wsl>wsl --unregister kali-linux
+Unregistering...
+
+D:\wsl>wsl -l -v
+  NAME            STATE           VERSION
+* Ubuntu          Stopped         2
+  Ubuntu-18.04    Stopped         2
 
 ```
 
